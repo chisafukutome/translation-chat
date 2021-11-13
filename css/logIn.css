@@ -5,7 +5,7 @@
 body {
   height: 100vh;
 }
-.sign-up-box {
+.log-in-box {
   width: 50%;
   margin: auto;
   position: absolute;
@@ -20,17 +20,17 @@ form {
   margin-top: 5%;
 }
 
-.sign-up-element {
+.log-in-element {
   margin-top: 15%;
   border-radius: 30px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-#sign-up-button {
+#log-in-button {
   margin-top: 1rem;
 }
 
-.log-in-link {
+.sign-up-link {
   margin-left: 2rem;
 }
