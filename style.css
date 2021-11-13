@@ -27,3 +27,19 @@
 .logout {
   bottom: 50px;
 }
+
+#textbox {
+  position: relative;
+  width: 65%;
+  height: 50px;
+  left: 25%;
+  bottom: 50px;
+}
+
+#sendbutton {
+  position: relative;
+  height: 50px;
+  width: 10%;
+  left: 90%;
+  bottom: 100px;
+}
