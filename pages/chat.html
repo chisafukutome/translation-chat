@@ -20,12 +20,22 @@
     </script>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <div class="navbar">
       <div class="nav-content">
-        <p class="position-absolute start-50 translate-middle username">
+        <p
+          class="
+            position-absolute
+            start-50
+            translate-middle
+            username
+            fw-light
+            fs-4
+          "
+        >
           Username
         </p>
-        <p class="position-absolute start-50 translate-middle language">
+        <p class="position-absolute start-50 translate-middle language fs-6">
           Language
         </p>
         <button
@@ -33,10 +43,41 @@
           class="btn logout position-absolute start-50 translate-middle"
           style="color: white; font-size: 1.5rem"
         >
-          <ion-icon name="log-out" class="icon"></ion-icon>Log Out
+          <a
+            href="../pages/logIn.html"
+            style="color: white; text-decoration: none"
+          >
+            <ion-icon name="log-out" class="icon"></ion-icon>
+            <p class="fs-4 d-none d-sm-block">Log Out</p></a
+          >
         </button>
       </div>
     </div>
+    <!-- End Navigation Bar -->
+
+    <!-- Chat section -->
+    <div class="chat-section">
+      <!-- Text Box -->
+      <div class="text-input">
+        <div class="text-input-element">
+          <input
+            class="col-6"
+            id="textbox"
+            class="form-control"
+            placeholder="Write a message..."
+          />
+          <button
+            id="sendbutton"
+            onclick="getMessage()"
+            class="btn btn-primary col-lg-1 col-sm-2"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      <!-- End Text Box -->
+    </div>
+    <!-- End chat section -->
 
     <!-- BootStrap -->
     <script
@@ -46,11 +87,5 @@
     ></script>
     <!-- icon -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <div class="container">
-      <input id="textbox" placeholder="Write a message..." />
-      <br />
-      <button id="sendbutton" onclick="getMessage()">Send</button>
-    </div>
   </body>
 </html>
