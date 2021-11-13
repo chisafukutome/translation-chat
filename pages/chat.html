@@ -12,12 +12,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script type="text/javascript">
-      function getMessage() {
-        var message = document.getElementById("textbox").value;
-        alert("The message you sent is " + message);
-      }
-    </script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -68,7 +62,7 @@
           />
           <button
             id="sendbutton"
-            onclick="getMessage()"
+            onclick="sendMessage()"
             class="btn btn-primary col-lg-1 col-sm-2"
           >
             Send
@@ -76,6 +70,19 @@
         </div>
       </div>
       <!-- End Text Box -->
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-area me hidden">
+      <div class="text-area me">
+        <p class="chat-text shadow-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          possimus rerum, corrupti quasi inventore minima ab? Nisi illum
+          distinctio deleniti officia omnis recusandae rem dolorem voluptatibus
+          nostrum! Culpa, eos consequuntur.
+        </p>
+        <p class="time me">00:00</p>
+      </div>
     </div>
     <!-- End chat section -->
 
@@ -87,5 +94,7 @@
     ></script>
     <!-- icon -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- JavaScript -->
+    <script src="../scripts/chat.js"></script>
   </body>
 </html>

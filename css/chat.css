@@ -29,6 +29,7 @@
 }
 /* End Navbar */
 
+/* Chat section */
 .chat-section {
   left: 25%;
   top: 0;
@@ -55,3 +56,33 @@
   margin-left: 0.5rem;
   padding: 0.5rem;
 }
+
+.chat-area {
+  padding-right: 5%;
+  width: calc(100% - 25%);
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* border: 5px solid red; */
+}
+.text-area {
+  float: right;
+  width: 40%;
+  /* border: 5px solid blue; */
+}
+
+.chat-text {
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* border: 5px solid orange; */
+}
+.time {
+  /* border: 5px solid orange; */
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+/* End chat section */
