@@ -3,8 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content=width=device-width, initial-scale=1.0">
-        <title>Boilerplate</title>
+        <title>Test</title>
+        <script type="text/javascript">
+            function getMessage()
+            {
+                var message = document.getElementById("textbox").value;
+                alert("The message you sent is " + message);
+            }
+
+        </script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body></body>
+    <body>
+        <input id="textbox" placeholder="Write a message...">
+        <br>
+        <button id="button1" onclick="getMessage()">Send</button>
+    </body>
 </html>
