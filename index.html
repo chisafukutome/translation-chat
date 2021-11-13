@@ -15,37 +15,49 @@
   </head>
   <body>
     <div class="container">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Username</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="username"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
-          >Password</label
-        >
-        <div class="col-sm-10">
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword"
-            placeholder="password"
-          />
+      <div class="sign-in-box">
+        <div class="sign-in-element shadow-lg">
+          <form>
+            <h4 class="text-center">Sign In</h4>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Username</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword" class="col-sm-2 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="password"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <p>Language</p>
+              <select class="form-control form-control">
+                <option>Large select</option>
+                <option>Large select</option>
+              </select>
+            </div>
+            <div
+              class="position-absolute start-50 translate-middle language"
+              id="sign-in-button"
+            >
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="mb-3">
-        <p>Language</p>
-        <select name="dropdown" class="dropdown">
-          <option value="#" selected>Language</option>
-          <option value="English">English</option>
-          <option value="Friench">Friench</option>
-        </select>
       </div>
     </div>
     <!-- BootStrap -->

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.sign-in-box {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+form {
+  margin: 10%;
+  margin-top: 5%;
+}
+
+.sign-in-element {
+  margin-top: 15%;
+  border-radius: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#sign-in-button {
+  margin-top: 1rem;
+}
