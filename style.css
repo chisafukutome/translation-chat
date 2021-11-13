@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 25%;
+  height: 100vh;
+  padding: 0;
+  background-color: #006db0;
+}
+.username {
+  top: 50px;
+  font-size: 2rem;
+  color: white;
+}
+.language {
+  top: 60px;
+  color: #373737;
+  margin-top: 2rem;
+  width: 7rem;
+  text-align: center;
+  background-color: #af005f;
+  border-radius: 15px;
+}
+
+.logout {
+  bottom: 50px;
+}
