@@ -14,6 +14,12 @@
     />
   </head>
   <body>
+    <script>
+      function getLanguage() {
+        var selectedLanguage = document.getElementById("dropdown").value;
+        console.log(selectedLanguage);
+      }
+    </script>
     <a href="pages/chat.html">Click Me!</a>
     <div class="container">
       <div class="sign-up-box">
@@ -46,9 +52,22 @@
             </div>
             <div class="mb-3">
               <p>Language</p>
-              <select class="form-control form-control">
-                <option>Large select</option>
-                <option>Large select</option>
+              <select class="form-control form-control" id="dropdown" onchange="getLanguage();">
+                <option value="">Select a language</option>
+                <option value="af">Afrikaans</option>
+                <option value="zh-CN">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="pt">Portuguese (Portugal, Brazil)</option>
+                <option value="es">Spanish</option>
+                <option value="tl">Tagalog (Filipino)</option>
+                <option value="vi">Vietnamese</option>
               </select>
             </div>
             <div
@@ -71,6 +90,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>
+    >
+    </script>
   </body>
 </html>
