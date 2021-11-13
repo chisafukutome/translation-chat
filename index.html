@@ -12,6 +12,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script type="text/javascript">
+            function getMessage()
+            {
+                var message = document.getElementById("textbox").value;
+                alert("The message you sent is " + message);
+            }
+
+    </script>
   </head>
   <body>
     <div class="navbar">
@@ -40,5 +48,10 @@
     ></script>
     <!-- icon -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <input id="textbox" placeholder="Write a message...">
+    <br>
+    <button id="button1" onclick="getMessage()">Send</button>
   </body>
 </html>
+
