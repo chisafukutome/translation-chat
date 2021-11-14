@@ -3,10 +3,6 @@ import select
 import os
 from google.cloud import translate_v2 as translate
 
-HEADER_LENGTH = 10
-IP = "127.0.0.1"
-PORT = 3000
-
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"solar-center-332017-e36ffd47e8aa.json"
 
 translate_client = translate.Client()

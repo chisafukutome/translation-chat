@@ -1,16 +1,15 @@
 import socket
-import select
 import errno
 import sys
 
+
 HEADER_LENGTH = 10
 
-IP = "127.0.0.1"
-PORT = 3000
 
 username_input = input("Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect((IP, PORT))
+client_socket.connect(('localhost', 3000))
+client_socket.connect(('34.138.134.251', 3000))
 client_socket.setblocking(False)
 
 username = username_input.encode("utf-8")

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content=width=device-width, initial-scale=1.0">
-    <title>Boilerplate</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="../css/chat.css" />
     <!-- BootStrap -->
     <link
@@ -12,12 +12,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script type="text/javascript">
-      function getMessage() {
-        var message = document.getElementById("textbox").value;
-        alert("The message you sent is " + message);
-      }
-    </script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -56,27 +50,39 @@
     <!-- End Navigation Bar -->
 
     <!-- Chat section -->
-    <div class="chat-section">
-      <!-- Text Box -->
-      <div class="text-input">
-        <div class="text-input-element">
-          <input
-            class="col-6"
-            id="textbox"
-            class="form-control"
-            placeholder="Write a message..."
-          />
-          <button
-            id="sendbutton"
-            onclick="getMessage()"
-            class="btn btn-primary col-lg-1 col-sm-2"
-          >
-            Send
-          </button>
+    <div class="chat-wrapper">
+      <div id="chat-section">
+        <!-- Text Box -->
+        <div class="text-input">
+          <div class="text-input-element">
+            <input
+              class="col-6"
+              id="textbox"
+              class="form-control"
+              placeholder="Write a message..."
+            />
+            <button
+              id="sendbutton"
+              onclick="sendMessage()"
+              class="btn btn-primary col-lg-1 col-sm-2"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+        <!-- End Text Box -->
+      </div>
+
+      <div class="message me shadow-lg" id="message" style="display: none">            <p class="chat-text shadow-lg"></p>    </div>
+      <!-- Chat Box -->
+      <!-- <div class="message"></div>
+      <div class="chat-area me shadow-lg" id="chat-area" style="display: none">
+        <div class="text-area me">
+          <p class="chat-text shadow-lg"></p>
+          <p class="time me">00:00</p>
         </div>
       </div>
-      <!-- End Text Box -->
-    </div>
+    </div> -->
     <!-- End chat section -->
 
     <!-- BootStrap -->
@@ -87,5 +93,7 @@
     ></script>
     <!-- icon -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- JavaScript -->
+    <script src="../scripts/chat.js"></script>
   </body>
 </html>
