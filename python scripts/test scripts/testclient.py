@@ -6,7 +6,7 @@ import sys
 HEADER_LENGTH = 10
 
 IP = "127.0.0.1"
-PORT = 2546
+PORT = 3000
 
 username_input = input("Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
