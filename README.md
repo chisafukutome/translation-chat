@@ -1,9 +1,10 @@
-# SpeaknMe
+# SpeaknTo
 
 **Date:** 11/12/2021 9PM - 11/14/2021 9AM
 **Event:** Knight Hack 2021
 **Project Name:** SpeaknMe
 **Members:** Chisa, Miguel, John, Ashley
+
 
 ## Tools Used
 
@@ -44,3 +45,4 @@ Log In Page
 
 Chat Page
 ![Chat Page](documentations/prototypes/Chat_Prototype.PNG)
+
